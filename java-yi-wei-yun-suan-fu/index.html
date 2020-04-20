@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>java运算符 | dw</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://dw.github.io/favicon.ico?v=1587388754764">
+<link rel="stylesheet" href="https://dw.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+
+
+运算符
+说明
+
+
+
+
+&lt;&lt;
+左移位，在低位处补0
+
+
+&gt;&gt;
+右移位，若为正数则高位补0，若为负数则高位补1
+
+
+&gt;&gt;&gt;
+无符号右移位，无论正负都在高位补0
+
+
+&amp;
+与（AND），对两个..." />
+    <meta name="keywords" content="java" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://dw.github.io">
+        <img src="https://dw.github.io/images/avatar.png?v=1587388754764" class="site-logo">
+        <h1 class="site-title">dw</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav" target="_blank">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://dw.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">java运算符</h2>
+            <div class="post-date">2020-04-19</div>
+            
+            <div class="post-content" v-pre>
+              <table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;&lt;</td>
+<td>左移位，在低位处补0</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>右移位，若为正数则高位补0，若为负数则高位补1</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;</td>
+<td>无符号右移位，无论正负都在高位补0</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>与（AND），对两个整型操作数中对应位执行布尔代数，两个位都为1时输出1，否则0。</td>
+</tr>
+<tr>
+<td>|</td>
+<td>或（OR），对两个整型操作数中对应位执行布尔代数，两个位都为0时输出0，否则1。</td>
+</tr>
+<tr>
+<td>~</td>
+<td>非（NOT），一元运算符。</td>
+</tr>
+<tr>
+<td>^</td>
+<td>异或（XOR），对两个整型操作数中对应位执行布尔代数，两个位相等0，不等1。</td>
+</tr>
+<tr>
+<td>&lt;&lt;=</td>
+<td>左移位赋值。</td>
+</tr>
+<tr>
+<td>&gt;&gt;=</td>
+<td>右移位赋值。</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;=</td>
+<td>无符号右移位赋值。</td>
+</tr>
+<tr>
+<td>&amp;=</td>
+<td>按位与赋值。</td>
+</tr>
+<tr>
+<td>|=</td>
+<td>按位或赋值。</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>按位异或赋值。</td>
+</tr>
+</tbody>
+</table>
+<p>符号位,1表示负数，0表示正数。<br>
+double，float在二进制中的表现比较特殊，因此不能来进行移位操作，报错，编译不过。<br>
+其它几种整形byte，short移位前会先转换为int类型（32位）再进行移位。</p>
+<h1 id="左移运算符">左移运算符</h1>
+<figure data-type="image" tabindex="1"><img src="https://dw.github.io/post-images/1587387685036.png" alt="" loading="lazy"></figure>
+<h1 id="右移运算符">右移运算符</h1>
+<figure data-type="image" tabindex="2"><img src="https://dw.github.io/post-images/1587387403294.png" alt="" loading="lazy"></figure>
+<h1 id="无符号右移">无符号右移</h1>
+<figure data-type="image" tabindex="3"><img src="https://dw.github.io/post-images/1587387420038.png" alt="" loading="lazy"></figure>
+<h1 id="运算符">&amp; 运算符</h1>
+<figure data-type="image" tabindex="4"><img src="https://dw.github.io/post-images/1587387443991.png" alt="" loading="lazy"></figure>
+<h1 id="运算符-2">| 运算符</h1>
+<figure data-type="image" tabindex="5"><img src="https://dw.github.io/post-images/1587387462655.png" alt="" loading="lazy"></figure>
+<h1 id="运算符-3">^ 运算符</h1>
+<figure data-type="image" tabindex="6"><img src="https://dw.github.io/post-images/1587387501561.png" alt="" loading="lazy"></figure>
+<h1 id="~-运算符">~ 运算符</h1>
+<figure data-type="image" tabindex="7"><img src="https://dw.github.io/post-images/1587387518911.png" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://dw.github.io/java/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dw.github.io/mian-shi-ji-hua/">
+                  <h3 class="post-title">
+                    面试计划
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

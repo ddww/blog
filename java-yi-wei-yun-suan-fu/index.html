@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ddww.github.io/blog/favicon.ico?v=1587389974977">
+<link rel="shortcut icon" href="https://ddww.github.io/blog/favicon.ico?v=1587476494148">
 <link rel="stylesheet" href="https://ddww.github.io/blog/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -50,7 +56,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ddww.github.io/blog">
-        <img src="https://ddww.github.io/blog/images/avatar.png?v=1587389974977" class="site-logo">
+        <img src="https://ddww.github.io/blog/images/avatar.png?v=1587476494148" class="site-logo">
         <h1 class="site-title">dw</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -100,7 +106,7 @@
       
     </div>
     <div class="site-description">
-      温故而知新
+      先努力让自己发光，对的人才能迎着光而来
     </div>
     <div class="site-footer">
        | <a class="rss" href="https://ddww.github.io/blog/atom.xml" target="_blank">RSS</a>
@@ -195,6 +201,8 @@ double，float在二进制中的表现比较特殊，因此不能来进行移位
 <figure data-type="image" tabindex="6"><img src="https://ddww.github.io/blog/post-images/1587387501561.png" alt="" loading="lazy"></figure>
 <h1 id="~-运算符">~ 运算符</h1>
 <figure data-type="image" tabindex="7"><img src="https://ddww.github.io/blog/post-images/1587387518911.png" alt="" loading="lazy"></figure>
+<h1 id="参考资料">参考资料</h1>
+<p><a href="https://zhuanlan.zhihu.com/p/30108890">Java中的移位运算符</a></p>
 
             </div>
             
@@ -217,6 +225,12 @@ double，float在二进制中的表现比较特殊，因此不能来进行移位
               </div>
             
 
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
             
 
           </div>
@@ -245,6 +259,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ddww.github.io/blog</id>
     <title>dw</title>
-    <updated>2020-04-21T15:07:50.276Z</updated>
+    <updated>2020-04-22T14:10:48.062Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ddww.github.io/blog"/>
     <link rel="self" href="https://ddww.github.io/blog/atom.xml"/>
@@ -16,13 +16,6 @@
         <link href="https://ddww.github.io/blog/java-yi-wei-yun-suan-fu/">
         </link>
         <updated>2020-04-19T06:29:44.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[面试计划]]></title>
-        <id>https://ddww.github.io/blog/mian-shi-ji-hua/</id>
-        <link href="https://ddww.github.io/blog/mian-shi-ji-hua/">
-        </link>
-        <updated>2020-04-19T03:39:56.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>java运算符 | dw</title>
+<title>Java 接口和抽象类 | dw</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -24,30 +24,13 @@
 
 
 
-    <meta name="description" content="
+    <meta name="description" content="什么是接口？
+接口通常以interface来修饰，是对行为的抽象，类通过继承接口的方式，继承接口的抽象方法。
+特点
 
-
-运算符
-说明
-
-
-
-
-&lt;&lt;
-左移位，在低位处补0
-
-
-&gt;&gt;
-右移位，若为正数则高位补0，若为负数则高位补1
-
-
-&gt;&gt;&gt;
-无符号右移位，无论正负都在高位补0
-
-
-&amp;
-与（AND），对两个..." />
-    <meta name="keywords" content="java" />
+接口的修饰符可使用public修饰，不加默认是default
+接口中的属性隐式的使用public static final..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -118,108 +101,38 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">java运算符</h2>
-            <div class="post-date">2020-04-19</div>
+            <h2 class="post-title">Java 接口和抽象类</h2>
+            <div class="post-date">2020-07-07</div>
             
             <div class="post-content" v-pre>
-              <table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;&lt;</td>
-<td>左移位，在低位处补0</td>
-</tr>
-<tr>
-<td>&gt;&gt;</td>
-<td>右移位，若为正数则高位补0，若为负数则高位补1</td>
-</tr>
-<tr>
-<td>&gt;&gt;&gt;</td>
-<td>无符号右移位，无论正负都在高位补0</td>
-</tr>
-<tr>
-<td>&amp;</td>
-<td>与（AND），对两个整型操作数中对应位执行布尔代数，两个位都为1时输出1，否则0。</td>
-</tr>
-<tr>
-<td>|</td>
-<td>或（OR），对两个整型操作数中对应位执行布尔代数，两个位都为0时输出0，否则1。</td>
-</tr>
-<tr>
-<td>~</td>
-<td>非（NOT），一元运算符。</td>
-</tr>
-<tr>
-<td>^</td>
-<td>异或（XOR），对两个整型操作数中对应位执行布尔代数，两个位相等0，不等1。</td>
-</tr>
-<tr>
-<td>&lt;&lt;=</td>
-<td>左移位赋值。</td>
-</tr>
-<tr>
-<td>&gt;&gt;=</td>
-<td>右移位赋值。</td>
-</tr>
-<tr>
-<td>&gt;&gt;&gt;=</td>
-<td>无符号右移位赋值。</td>
-</tr>
-<tr>
-<td>&amp;=</td>
-<td>按位与赋值。</td>
-</tr>
-<tr>
-<td>|=</td>
-<td>按位或赋值。</td>
-</tr>
-<tr>
-<td>^=</td>
-<td>按位异或赋值。</td>
-</tr>
-</tbody>
-</table>
-<p>符号位,1表示负数，0表示正数。<br>
-double，float在二进制中的表现比较特殊，因此不能来进行移位操作，报错，编译不过。<br>
-其它几种整形byte，short移位前会先转换为int类型（32位）再进行移位。</p>
-<h1 id="左移运算符">左移运算符</h1>
-<figure data-type="image" tabindex="1"><img src="https://ddww.github.io/blog/post-images/1587481196890.png" alt="" loading="lazy"></figure>
-<h1 id="右移运算符">右移运算符</h1>
-<figure data-type="image" tabindex="2"><img src="https://ddww.github.io/blog/post-images/1587387403294.png" alt="" loading="lazy"></figure>
-<h1 id="无符号右移">无符号右移</h1>
-<figure data-type="image" tabindex="3"><img src="https://ddww.github.io/blog/post-images/1587387420038.png" alt="" loading="lazy"></figure>
-<h1 id="运算符">&amp; 运算符</h1>
-<figure data-type="image" tabindex="4"><img src="https://ddww.github.io/blog/post-images/1587387443991.png" alt="" loading="lazy"></figure>
-<h1 id="运算符-2">| 运算符</h1>
-<figure data-type="image" tabindex="5"><img src="https://ddww.github.io/blog/post-images/1587387462655.png" alt="" loading="lazy"></figure>
-<h1 id="运算符-3">^ 运算符</h1>
-<figure data-type="image" tabindex="6"><img src="https://ddww.github.io/blog/post-images/1587387501561.png" alt="" loading="lazy"></figure>
-<h1 id="~-运算符">~ 运算符</h1>
-<figure data-type="image" tabindex="7"><img src="https://ddww.github.io/blog/post-images/1587387518911.png" alt="" loading="lazy"></figure>
-<h1 id="参考资料">参考资料</h1>
-<p><a href="https://zhuanlan.zhihu.com/p/30108890">Java中的移位运算符</a></p>
+              <h1 id="什么是接口">什么是接口？</h1>
+<p>接口通常以<strong>interface</strong>来修饰，是对行为的抽象，类通过继承接口的方式，继承接口的抽象方法。</p>
+<h2 id="特点">特点</h2>
+<ul>
+<li>接口的修饰符可使用<strong>public</strong>修饰，不加默认是<strong>default</strong></li>
+<li>接口中的属性隐式的使用<strong>public static final</strong>修饰</li>
+<li>JDK1.8 接口中的方法包含三种
+<ul>
+<li>默认方法（<strong>default</strong>修饰）</li>
+<li>静态方法（<strong>public static</strong>修饰）</li>
+<li>抽象方法（<strong>public abstract</strong>修饰，我们定义的接口没有抽象方法或是不实现，将毫无意义）</li>
+</ul>
+</li>
+<li>可实现接口多继承</li>
+<li>接口不能实例化对象</li>
+<li>接口没有构造方法</li>
+<li>接口不是被类继承了，而是要被类实现<br>
+#什么是抽象类？</li>
+</ul>
 
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://ddww.github.io/blog/java/" class="tag">
-                    java
-                  </a>
-                
-              </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://ddww.github.io/blog/hello-gridea/">
+                <a href="https://ddww.github.io/blog/java-yi-wei-yun-suan-fu/">
                   <h3 class="post-title">
-                    Hello Gridea
+                    java运算符
                   </h3>
                 </a>
               </div>
